@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>dice.io demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/app.min.css">
+    <script src="js/diceio.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </head>
+  <body>
+    <!-- Top bar -->
+    <div class="topnav">
+      <div class="topnav-title">dice.io demo</div>
+      <div class="topnav-nickname"></div>
+    </div>
+
+    <!-- Roll results container -->
+    <div class="rolls"></div>
+
+    <!-- Bottom bar -->
+    <div class="bottomnav">
+      <div class="formula-container">
+        <form spellcheck="false" autocomplete="off" onsubmit="return false;">
+          <ul>
+            <li>
+              <input type="text" class="formula" placeholder="Type a dice formula and press 'Enter' key..." value="" />
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class="formula-icon"></div>
+    </div>
+
+    <!-- Nickname modal -->
+    <div class="modal">
+      <div class="modal-content">
+
+        <form spellcheck="false" autocomplete="off" onsubmit="return false;">
+          <div class="modal-container">
+            <label for="nickname"><b>Nickname</b></label>
+            <input class="modal-nickname" type="text" placeholder="Enter nickname" name="nickname" required />
+            <button class="modal-button" type="submit">Login</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+    <script>
+     (function () {
+        var diceRoller = new DiceIO({
+          // connect: true,
+          // historyOnConnect: false,
+          // nickname: 'Frodo',
+          // serverUrl: window.location.origin,
+          // socketOptions: { path: window.location.pathname + 'socket.io' },
+          // engine: DiceIO.engines.DICE_JS,
+          // engine: DiceIO.engines.RPG_DICE_JS,
+          // engine: DiceIO.engines.RPG_DICE_ROLLER,
+          // onError: onErrorCallback,
+          // onDisconnect: onDisconnectCallback,
+          // onConnect: onConnectCallback,
+          // onHistory: onHistoryCallback,
+          // onRoll: onRollCallback,
+        });
+
+        // diceRoller.setEngine(DiceIO.engines.DICE_JS);
+        // diceRoller.setNickname('Frodo');
+        // diceRoller.getHistory();
+
+        var app = new DemoApp(diceRoller);
+     })();
+    </script>
+  </body>
+</html>
