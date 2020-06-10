@@ -1,0 +1,55 @@
+{
+  "author": "tpftg",
+  "name": "dice.io",
+  "version": "0.1.0",
+  "description": "A simple dice roller server.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tpftg/dice.io.git"
+  },
+  "homepage": "https://github.com/tpftg/dice.io",
+  "keywords": [
+    "dice",
+    "roller",
+    "rpg",
+    "server"
+  ],
+  "bin": {
+    "diceio": "./bin/index.js"
+  },
+  "main": "./src/server.js",
+  "scripts": {
+    "dev": "webpack --progress --watch --mode production",
+    "dist": "npm run lint && webpack --progress --mode production",
+    "lint": "eslint webpack.config.js src/**/*.js && stylelint src/**/*.css",
+    "start": "./bin/index.js"
+  },
+  "dependencies": {
+    "command-line-args": "^5.1.1",
+    "command-line-usage": "^6.1.0",
+    "cors": "^2.8.5",
+    "dice.js": "^0.9.3",
+    "express": "^4.17.1",
+    "rpg-dice-roller": "^4.1.1",
+    "rpgdicejs": "^2.0.0-rc.3",
+    "serve-static": "^1.14.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "autoprefixer": "^9.8.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "eslint": "^7.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "stylelint": "^13.6.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "terser-webpack-plugin": "^3.0.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
