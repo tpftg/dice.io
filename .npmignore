@@ -5,7 +5,8 @@
 .stylelintrc.json
 node_modules
 postcss.config.js
-src
+src/client
+src/demo
 tests
 webpack.config.js
 yarn.lock
