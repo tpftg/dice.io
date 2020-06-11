@@ -29,6 +29,7 @@ exports.create = function (config) {
     express()
       .use(cors({origin: true}))
       .use(serveStatic(rootPath, {index: 'index.html'}))
+      .disable('x-powered-by')
   )
 
   const io = socketIO(server)
