@@ -1,12 +1,14 @@
 .babelrc
-.eslintrc.json
+.eslintrc.js
 .github
 .gitignore
 .stylelintrc.json
+docs
 node_modules
 postcss.config.js
 src/client
 src/demo
+src/miro
 tests
-webpack.config.js
+webpack.config.*.js
 yarn.lock
