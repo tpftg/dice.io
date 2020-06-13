@@ -2,6 +2,8 @@
 
 import { el, str, make, addOneClass, removeClass } from '../demo/dom'
 
+const DICE_MP3_PATH = '../mp3/dice.mp3'
+
 export default class MiroPluginApp {
   constructor(diceRoller) {
     this._diceRoller = diceRoller
@@ -36,6 +38,9 @@ export default class MiroPluginApp {
       minute: 'numeric',
       second: 'numeric',
     })
+
+    // Load dice roll sound
+    this._diceSound = new Audio(DICE_MP3_PATH)
   }
 
   _setupDiceRoller() {
@@ -68,8 +73,14 @@ export default class MiroPluginApp {
 
   _onRoll(result) {
     // console.log('onRoll', result)
+    this._playRollSound()
     this._appendRoll(result)
     this._scrollToBottom(this.rolls)
+  }
+
+  _playRollSound() {
+    this._diceSound.load()
+    this._diceSound.play()
   }
 
   _appendRoll(result) {
