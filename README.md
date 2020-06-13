@@ -24,6 +24,10 @@ This project is still under development and __is not__ production ready.
 
 Create a new [issue](https://github.com/tpftg/dice.io/issues) if you wish another javascript dice engine to be added to the project.
 
+## Miro integration
+
+Application server provide a [Web Plugin](docs/miro.md) for the [Miro](https://miro.com) online collaborative whiteboarding platform.
+
 ## Credits
 
 This project mainly uses the following dependencies :
@@ -34,3 +38,5 @@ This project mainly uses the following dependencies :
 * [socket.io](https://github.com/socketio/socket.io)
 
 Dice SVG icon originally made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/).
+
+_"Shake And Roll Dice"_ sound made by __Mike Koenig__ from [sounbible.com](http://soundbible.com/182-Shake-And-Roll-Dice.html). [Creative Commons](https://creativecommons.org/licenses/by/3.0/legalcode).

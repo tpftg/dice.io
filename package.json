@@ -20,9 +20,13 @@
   },
   "main": "./src/server.js",
   "scripts": {
-    "dev": "webpack --progress --watch --mode production",
-    "dist": "npm run lint && webpack --progress --mode production",
-    "lint": "eslint webpack.config.js src/**/*.js && stylelint src/**/*.css",
+    "dev": "webpack --progress --watch --mode production --config webpack.config.client.js",
+    "dist": "npm run lint && webpack --progress --mode production --config webpack.config.client.js",
+    "dev:demo": "webpack --progress --watch --mode production --config webpack.config.demo.js",
+    "dist:demo": "npm run lint && webpack --progress --mode production --config webpack.config.demo.js",
+    "dev:miro": "webpack --progress --watch --mode production --config webpack.config.miro.js",
+    "dist:miro": "npm run lint && webpack --progress --mode production --config webpack.config.miro.js",
+    "lint": "eslint webpack.*.js src/**/*.js && stylelint src/**/*.css",
     "start": "./bin/index.js"
   },
   "dependencies": {

@@ -5,6 +5,7 @@ import { el, str, make, addOneClass, removeClass } from './dom'
 import { getCookie, setCookie } from './cookie'
 
 const COOKIE_NICKNAME = '__DiceIO_Demo_Nickname'
+const DICE_MP3_PATH = 'mp3/dice.mp3'
 
 export default class DemoApp {
   constructor(diceRoller) {
@@ -79,6 +80,9 @@ export default class DemoApp {
       event.preventDefault()
       this._setModalVisibility(true)
     })
+
+    // Load dice roll sound
+    this._diceSound = new Audio(DICE_MP3_PATH)
   }
 
   _setupNickname(next) {
@@ -144,6 +148,18 @@ export default class DemoApp {
     this._scrollToBottom(document.body)
   }
 
+  _onRoll(result) {
+    // console.log('onRoll', result)
+    this._playRollSound()
+    this._appendRoll(result)
+    this._scrollToBottom(document.body)
+  }
+
+  _playRollSound() {
+    this._diceSound.load()
+    this._diceSound.play()
+  }
+
   _empty(element) {
     let last
     while (last = element.lastChild) { // eslint-disable-line no-cond-assign
@@ -197,11 +213,5 @@ export default class DemoApp {
     }))
 
     this.rolls.appendChild(roll)
-  }
-
-  _onRoll(result) {
-    // console.log('onRoll', result)
-    this._appendRoll(result)
-    this._scrollToBottom(document.body)
   }
 }
