@@ -7,7 +7,7 @@ These examples assume that the dice.io server is listening at address `127.0.0.1
 Client configuration :
 
 ```javascript
-var dr = new DiceRoller({
+var dr = new DiceIO({
   nickname: 'Frodo',
   serverUrl: 'http://example.com',
   // [...]
@@ -42,7 +42,7 @@ In this example, server application should be available at `http://example.com` 
 Client configuration :
 
 ```javascript
-var dr = new DiceRoller({
+var dr = new DiceIO({
   nickname: 'Frodo',
   serverUrl: 'http://example.com',
   socketOptions: { path: '/dice/socket.io' },
@@ -78,7 +78,7 @@ In this example, server application should be available at `http://example.com/d
 In this example, the values ​​of `serverURL` and `socketOptions` correspond to the default configuration of the client.
 
 ```javascript
-var dr = new DiceRoller({
+var dr = new DiceIO({
   nickname: 'Gandalf',
   serverUrl: window.location.origin,
   socketOptions: { path: window.location.pathname + 'socket.io' },
