@@ -34,3 +34,5 @@ This project mainly uses the following dependencies :
 * [socket.io](https://github.com/socketio/socket.io)
 
 Dice SVG icon originally made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/).
+
+_"Shake And Roll Dice"_ sound made by __Mike Koenig__ from [sounbible.com](http://soundbible.com/182-Shake-And-Roll-Dice.html). [Creative Commons](https://creativecommons.org/licenses/by/3.0/legalcode).
