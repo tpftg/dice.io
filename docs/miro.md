@@ -1,0 +1,39 @@
+# Miro Web Plugin
+
+This documentation assumes that :
+
+* you host your own dice.io server on an https domain.
+* you are logged in to [Miro](https://miro.com)
+
+## Getting started
+
+To get started you need to :
+
+* Create __Dev team__ for Sandbox _(Allow to create application)_
+* Create an application and set it up _(web-plugin url and scopes)_
+
+### Create Dev Team
+
+Note : you can skip this step if already have __Dev Team__.
+
+Just follow [instructions here](https://developers.miro.com/docs/getting-started#section-step-1-get-developer-team). _(click on the "Get Dev Team" button)_
+
+### Create application
+
+In Miro account __profile settings__ and click on __API, SDK & Embed__ tab and click on __Create a new app__ button.
+
+In __Web-plugin__ section enter the dice.io server plugin url, for example `https://example.com/miro`, and click on save button.
+
+In __OAuth scopes__ section select `boards:read` scope.
+
+Finally, click on __Install app and get OAuth Token__ button and choose the team where to install the plugin.
+
+## Usage
+
+When installed, the web plugin add a dice icon on the bottom bar.
+
+Just click on dice button to open sidebar and type a dice formula.
+
+## Credits
+
+Dice SVG icon originally made by [Smashicons](https://smashicons.com/) from [www.flaticon.com](https://www.flaticon.com/).

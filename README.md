@@ -24,6 +24,10 @@ This project is still under development and __is not__ production ready.
 
 Create a new [issue](https://github.com/tpftg/dice.io/issues) if you wish another javascript dice engine to be added to the project.
 
+## Miro integration
+
+Application server provide a [Web Plugin](docs/miro.md) for the [Miro](https://miro.com) online collaborative whiteboarding platform.
+
 ## Credits
 
 This project mainly uses the following dependencies :
