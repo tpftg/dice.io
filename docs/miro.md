@@ -16,19 +16,19 @@ To get started you need to :
 
 Note : you can skip this step if already have __Dev Team__.
 
-Just follow [instructions here](https://developers.miro.com/docs/getting-started#section-step-1-get-developer-team). _(click on the "Get Dev Team" button)_
+Just follow [instructions here](https://developers.miro.com/docs/getting-started#section-step-1-get-developer-team). _(click on the __"Get Dev Team"__ button)_
 
 ### Create application
 
-In Miro account __profile settings__ and click on __API, SDK & Embed__ tab and click on __Create a new app__ button.
+In Miro account __profile settings__, click on __"API, SDK & Embed"__ tab and click on __"Create a new app"__ button.
 
 ![profile settings](miro-profile.png)
 
-In __Web-plugin__ section enter the dice.io server plugin url, for example `https://example.com/miro`, and click on save button.
+In __Web-plugin__ section enter the dice.io server plugin url, for example `https://example.com/miro`, and click on __"save"__ button.
 
 In __OAuth scopes__ section select `boards:read` scope.
 
-Finally, click on __Install app and get OAuth Token__ button and choose the team where to install the plugin.
+Finally, click on __"Install app and get OAuth Token"__ button and choose the team where to install the plugin.
 
 ![app settings](miro-app.png)
 
