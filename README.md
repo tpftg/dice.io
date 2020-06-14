@@ -26,6 +26,11 @@ Application server provide a Javascript [client](docs/client.md) library to crea
 
 Application server provide a [Web Plugin](docs/miro.md) for the [Miro](https://miro.com) online collaborative whiteboarding platform.
 
+## Miscellaneous
+
+* Nginx [proxy configuration](docs/nginx.md) examples
+* Linux [systemd service file](docs/systemd.md) example
+
 ## About
 
 Project main goals are to provide :
