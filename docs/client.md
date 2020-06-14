@@ -111,7 +111,7 @@ Note: this method return nothing and call `onRoll` callback on success or `onErr
 Set dice roller engine.
 
 ```javascript
-diceRoller.setNickname(DiceIO.engines.DICE_JS);
+diceRoller.setEngine(DiceIO.engines.DICE_JS);
 ```
 
 ### setNickname(nickname)
