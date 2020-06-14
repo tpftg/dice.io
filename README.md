@@ -18,21 +18,29 @@ $ diceio -a 127.0.0.1 -p 8080
 
 Then open `http://127.0.0.1:8080` in your browser to display demo application.
 
-## About
+## Dice roller client library
 
-This project is still under development and __is not__ production ready.
-
-Create a new [issue](https://github.com/tpftg/dice.io/issues) if you wish another javascript dice engine to be added to the project.
+Application server provide a Javascript [client](docs/client.md) library to create your own web application.
 
 ## Miro integration
 
 Application server provide a [Web Plugin](docs/miro.md) for the [Miro](https://miro.com) online collaborative whiteboarding platform.
+
+## About
+
+Project main goals are to provide :
+
+* a simple collaborative way to roll dice formula
+* a client library to allow custom integration
+
+If you wish another Javascript dice engine to be added to the project, create a new [issue](https://github.com/tpftg/dice.io/issues).
 
 ## Credits
 
 This project mainly uses the following dependencies :
 
 * [dice.js](https://github.com/lordnull/dice.js)
+* [express](https://github.com/expressjs/express)
 * [rpg-dice-roller](https://github.com/GreenImp/rpg-dice-roller) _(server default engine)_
 * [rpgdice](https://github.com/Morgul/rpgdice)
 * [socket.io](https://github.com/socketio/socket.io)
