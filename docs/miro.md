@@ -22,11 +22,17 @@ Just follow [instructions here](https://developers.miro.com/docs/getting-started
 
 In Miro account __profile settings__ and click on __API, SDK & Embed__ tab and click on __Create a new app__ button.
 
+![profile settings](miro-profile.png)
+
 In __Web-plugin__ section enter the dice.io server plugin url, for example `https://example.com/miro`, and click on save button.
 
 In __OAuth scopes__ section select `boards:read` scope.
 
 Finally, click on __Install app and get OAuth Token__ button and choose the team where to install the plugin.
+
+![app settings](miro-app.png)
+
+Note: this web plugin does not access to board, it only get the name of current logged in user to setup the dice roller nickname.
 
 ## Usage
 
