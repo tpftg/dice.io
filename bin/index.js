@@ -11,6 +11,7 @@ const optionList = [
   { name: 'host', alias: 'a', type: String, description: 'Server ip address or hostname.', defaultValue: config.host },
   { name: 'port', alias: 'p', type: Number, description: 'Server port number.', defaultValue: config.port },
   { name: 'engine', alias: 'e', type: String, description: 'Default dice roller engine.', defaultValue: config.engine },
+  { name: 'history', type: Number, description: 'Dice roll history size.', defaultValue: config.historyLength },
 ]
 
 var options = {}
@@ -38,6 +39,7 @@ if (options.help) {
 
 options.host && (config.host = options.host)
 options.port && (config.port = options.port)
+options.history && (config.historyLength = options.history)
 
 if (server.hasEngine(options.engine)) {
   config.engine = options.engine
