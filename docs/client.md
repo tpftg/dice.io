@@ -52,7 +52,7 @@ diceRoller.roll('1d6');
 | serverUrl | String | Set server connect URL. (default is `window.location.origin`) |
 | socketOptions | Object | Set [socket.io client](https://github.com/socketio/engine.io-client#methods) options. default is `{ path: window.location.pathname + 'socket.io' }` |
 
-## Dice engines
+## Dice roller engines
 
 Note: the default dice roller engine is set in server configuration.
 
@@ -113,6 +113,7 @@ diceRoller.roll('1d6');
 ### setEngine(engine)
 
 * `engine` _(String)_
+* __Returns__ `DiceIO` for chaining
 
 Set dice roller engine.
 
@@ -123,6 +124,7 @@ diceRoller.setEngine(DiceIO.engines.DICE_JS);
 ### setNickname(nickname)
 
 * `nickname` _(String)_
+* __Returns__ `DiceIO` for chaining
 
 Set user nickname.
 
@@ -236,28 +238,14 @@ diceRoller.onRoll(function(result) {
 
 The user nickname. _(read only)_
 
-```javascript
-console.log(diceRoller.nickname);
-```
-
 ### config
 
 * _(Object)_
 
 The client configuration. _(read only)_
 
-```javascript
-console.log(diceRoller.config);
-```
-
 ### connected
 
 * _(Boolean)_
 
 Indicate if client is connected to server. _(read only)_
-
-```javascript
-if (diceRoller.connected) {
-  // dice roller client is connected
-}
-```
