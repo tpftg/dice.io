@@ -40,17 +40,17 @@ diceRoller.roll('1d6');
 
 | Name | Type | Description |
 | ---- | :--: | ----------- |
-| connect | boolean | Set this option to `true` to automatically connect to server. (default is `false`) |
-| engine | string | Set engine used by server to roll dice formula. (default is none) |
-| historyOnConnect | boolean | Set this option to `false` to not get dice roll history after (re)connect to server. (default is `true`) |
-| nickname | string | Set user nickname. (default is random. Example: `User123`) |
+| connect | Boolean | Set this option to `true` to automatically connect to server. (default is `false`) |
+| engine | String | Set engine used by server to roll dice formula. (default is none) |
+| historyOnConnect | Boolean | Set this option to `false` to not get dice roll history after (re)connect to server. (default is `true`) |
+| nickname | String | Set user nickname. (default is random. Example: `User123`) |
 | onConnect | Function | Client connect callback. (default is none) |
 | onDisconnect | Function | Client disconnect callback. (default is none) |
 | onError | Function | Roll error callback. (default is none) |
 | onHistory | Function | Roll history callback. (default is none) |
 | onRoll | Function | Roll result callback. (default is none) |
-| serverUrl | string | Set server connect URL. (default is `window.location.origin`) |
-| socketOptions | object | Set [socket.io client](https://github.com/socketio/engine.io-client#methods) options. default is `{ path: window.location.pathname + 'socket.io' }` |
+| serverUrl | String | Set server connect URL. (default is `window.location.origin`) |
+| socketOptions | Object | Set [socket.io client](https://github.com/socketio/engine.io-client#methods) options. default is `{ path: window.location.pathname + 'socket.io' }` |
 
 ## Dice engines
 
@@ -68,25 +68,29 @@ The engine used by server can be set in client with `engine` option or `setEngin
 
 Connect to server.
 
+__Note:__ this method call `onConnect` callback on success.
+
 ```javascript
 diceRoller.connect();
 ```
-
-Note: this method return nothing and call `onConnect` callback on success.
 
 ### disconnect()
 
 Disconnect from server.
 
+__Note:__ this method call `onDisconnect` callback on success.
+
 ```javascript
 diceRoller.disconnect();
 ```
 
-Note: this method return nothing and call `onDisconnect` callback on success.
-
 ### getHistory([length])
 
+* `length` _(Number)_
+
 Get dice rolls history.
+
+__Note:__ this method call `onHistory` callback on success.
 
 ```javascript
 diceRoller.getHistory();  // Get the last dice rolls stored by server
@@ -94,19 +98,21 @@ diceRoller.getHistory();  // Get the last dice rolls stored by server
 diceRoller.getHistory(10); // Get the last ten dice rolls
 ```
 
-Note: this method return nothing and call `onHistory` callback on success.
-
 ### roll(formula)
 
+* `formula` _(String)_
+
 Roll dice formula.
+
+__Note:__ this method call `onRoll` callback on success or `onError` callback on failure.
 
 ```javascript
 diceRoller.roll('1d6');
 ```
 
-Note: this method return nothing and call `onRoll` callback on success or `onError` callback on failure.
-
 ### setEngine(engine)
+
+* `engine` _(String)_
 
 Set dice roller engine.
 
@@ -116,6 +122,8 @@ diceRoller.setEngine(DiceIO.engines.DICE_JS);
 
 ### setNickname(nickname)
 
+* `nickname` _(String)_
+
 Set user nickname.
 
 ```javascript
@@ -123,6 +131,9 @@ diceRoller.setNickname('Frodo');
 ```
 
 ### onConnect(callback)
+
+* `callback` _(Function)_
+* __Returns__ `DiceIO` for chaining
 
 Set client connect callback.
 
@@ -137,6 +148,9 @@ diceRoller.onConnect(function(config) {
 
 ### onDisconnect(callback)
 
+* `callback` _(Function)_
+* __Returns__ `DiceIO` for chaining
+
 Set client disconnect callback.
 
 ```javascript
@@ -149,6 +163,9 @@ diceRoller.onDisconnect(function(config) {
 ```
 
 ### onError(callback)
+
+* `callback` _(Function)_
+* __Returns__ `DiceIO` for chaining
 
 Set roll error callback.
 
@@ -171,6 +188,9 @@ diceRoller.onError(function(error) {
 
 ### onHistory(callback)
 
+* `callback` _(Function)_
+* __Returns__ `DiceIO` for chaining
+
 Set history callback.
 
 ```javascript
@@ -181,6 +201,9 @@ diceRoller.onHistory(function(history) {
 ```
 
 ### onRoll(callback)
+
+* `callback` _(Function)_
+* __Returns__ `DiceIO` for chaining
 
 Set roll result callback.
 
@@ -209,7 +232,9 @@ diceRoller.onRoll(function(result) {
 
 ### nickname
 
-Get user nickname.
+* _(String)_
+
+The user nickname. _(read only)_
 
 ```javascript
 console.log(diceRoller.nickname);
@@ -217,7 +242,9 @@ console.log(diceRoller.nickname);
 
 ### config
 
-Get client configuration object.
+* _(Object)_
+
+The client configuration. _(read only)_
 
 ```javascript
 console.log(diceRoller.config);
@@ -225,7 +252,9 @@ console.log(diceRoller.config);
 
 ### connected
 
-Get boolean value which indicate if client is connected to server.
+* _(Boolean)_
+
+Indicate if client is connected to server. _(read only)_
 
 ```javascript
 if (diceRoller.connected) {
