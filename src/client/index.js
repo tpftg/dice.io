@@ -4,6 +4,7 @@ import socketIO from 'socket.io-client'
 import {random, isFunction} from './utils'
 import engines from '../server/engines'
 import eventNames from '../server/event-names'
+import { isValid as isValidChannel } from '../server/channel'
 
 export default class DiceRoller {
 
@@ -43,6 +44,10 @@ export default class DiceRoller {
     // Fast & dirty configuration validation
     if (Object.prototype.hasOwnProperty.call(config, 'nickname') && (config.nickname + '').length < 1) {
       this._throwConfigError('nickname')
+    }
+
+    if (config.channel && !isValidChannel(config.channel)) {
+      this._throwConfigError('channel')
     }
 
     if (config.engine && !engines.has(config.engine)) {
@@ -162,12 +167,14 @@ export default class DiceRoller {
 
   getHistory(length) {
     this.connected && this._socket.emit(eventNames.HISTORY, {
+      channel: this._cfg.channel,
       length: length
     })
   }
 
   roll(formula, scope) {
     this.connected && this._socket.emit(eventNames.ROLL, {
+      channel: this._cfg.channel,
       engine: this._cfg.engine,
       formula: formula,
       nickname: this._cfg.nickname,
