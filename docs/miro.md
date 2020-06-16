@@ -32,7 +32,10 @@ Finally, click on __"Install app and get OAuth Token"__ button and choose the te
 
 ![app settings](miro-app.png)
 
-Note: this web plugin does not access to board, it only get the name of current logged in user to setup the dice roller nickname.
+Note: this web plugin does not access to boards, it only get :
+
+* the name of current logged in user to setup the dice roller nickname
+* the team account id to setup the dice roller channel name
 
 ## Usage
 
