@@ -40,6 +40,8 @@ Project main goals are to provide :
 
 If you wish another Javascript dice engine to be added to the project, create a new [issue](https://github.com/tpftg/dice.io/issues).
 
+A live demo is available [here](https://diceio-app.herokuapp.com), hosted on a small [Heroku](https://www.heroku.com/home) free instance. Please __don't use it as main server__, instead deploy your own server following [this guide](https://github.com/tpftg/diceio-heroku).
+
 ## Credits
 
 This project mainly uses the following dependencies :
