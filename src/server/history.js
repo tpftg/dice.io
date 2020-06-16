@@ -1,6 +1,7 @@
 // History
 
 function History(maxLength) {
+  this._expireAt = false
   this._maxLength = maxLength
   this.clear()
 }
@@ -19,6 +20,16 @@ History.prototype.push = function (item) {
   }
 
   return this._items.push(item)
+}
+
+History.prototype.expireIn = function (milliseconds) {
+  this._expireAt = Date.now() + milliseconds
+
+  return this
+}
+
+History.prototype.expired = function () {
+  return this._expireAt && Date.now() >= this._expireAt
 }
 
 exports = module.exports = History
