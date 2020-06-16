@@ -15,7 +15,9 @@ Add library scripts to your HTML :
 Then create client instance :
 
 ```javascript
-var diceRoller = new DiceIO({ /* optional configuration object */ });
+var diceRoller = new DiceIO({
+  'channel': 'acme123', // "channel" configuration option is recommended
+});
 
 diceRoller
   .setNickname('Frodo')
@@ -40,6 +42,7 @@ diceRoller.roll('1d6');
 
 | Name | Type | Description |
 | ---- | :--: | ----------- |
+| channel | String | Set server channel name. Must be at least three __lowercase alphanumeric__ characters. (default is none) |
 | connect | Boolean | Set this option to `true` to automatically connect to server. (default is `false`) |
 | engine | String | Set engine used by server to roll dice formula. (default is none) |
 | historyOnConnect | Boolean | Set this option to `false` to not get dice roll history after (re)connect to server. (default is `true`) |
