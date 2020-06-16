@@ -15,8 +15,11 @@ exports.defaultConfig = function () {
   return {
     host: '127.0.0.1',
     port: 8080,
+    channel: 'diceiodef',
     engine: engines.RPG_DICE_ROLLER,
+    historyInterval: 60000,    // 1 minute
     historyLength: 50,
+    historyExpiry: 2592000000, // 30 days
   }
 }
 
