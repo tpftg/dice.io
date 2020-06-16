@@ -8,6 +8,7 @@ Client configuration :
 
 ```javascript
 var dr = new DiceIO({
+  channel: 'bebop123',
   nickname: 'Frodo',
   serverUrl: 'http://example.com',
   // [...]
@@ -43,6 +44,7 @@ Client configuration :
 
 ```javascript
 var dr = new DiceIO({
+  channel: 'bebop123',
   nickname: 'Frodo',
   serverUrl: 'http://example.com',
   socketOptions: { path: '/dice/socket.io' },
@@ -79,6 +81,7 @@ In this example, the values ​​of `serverURL` and `socketOptions` correspond 
 
 ```javascript
 var dr = new DiceIO({
+  channel: 'bebop123',
   nickname: 'Gandalf',
   serverUrl: window.location.origin,
   socketOptions: { path: window.location.pathname + 'socket.io' },
