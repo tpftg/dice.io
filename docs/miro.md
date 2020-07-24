@@ -24,7 +24,9 @@ In Miro account __profile settings__, click on __"API, SDK & Embed"__ tab and cl
 
 ![profile settings](miro-profile.png)
 
-In __Web-plugin__ section enter the dice.io server web plugin url : it is server root url __with `/miro/` path__ _(for example `https://example.com/miro/`)_, and click on __"save"__ button.
+In __Web-plugin__ section enter the dice.io server web plugin url : it is server root url __with `/miro/` path__, and click on __"save"__ button.
+
+_(for example `https://example.com/miro/`)_
 
 In __OAuth scopes__ section select `boards:read` scope.
 
