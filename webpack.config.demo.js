@@ -43,7 +43,7 @@ var options = {
   ]
 }
 
-if (process.env.npm_lifecycle_event === 'dist:demo') {
+if (process.env.npm_lifecycle_event === 'dist') {
   options.optimization.minimizer = [
     new TerserPlugin({
       extractComments: false,
