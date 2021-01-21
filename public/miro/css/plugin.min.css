@@ -1,1 +1,269 @@
-@font-face{font-family:Formular;font-style:normal;font-weight:300;src:local("Formular Light"),local("Formular-Light"),url(https://miro.com/app/static/static/fonts/general/FormularLight/formular-light.66c7da.woff2) format("woff2"),url(https://miro.com/app/static/static/fonts/general/FormularLight/formular-light.96fc69.woff) format("woff")}@font-face{font-family:Formular;font-style:normal;font-weight:400;src:local("Formular Regular"),local("Formular-Regular"),url(https://miro.com/app/static/static/fonts/general/FormularRegular/formular-regular.4b9930.woff2) format("woff2"),url(https://miro.com/app/static/static/fonts/general/FormularRegular/formular-regular.5de463.woff) format("woff")}@font-face{font-family:Formular;font-style:normal;font-weight:500;src:local("Formular Medium"),local("Formular-Medium"),url(https://miro.com/app/static/static/fonts/general/FormularMedium/formular-medium.51c999.woff2) format("woff2"),url(https://miro.com/app/static/static/fonts/general/FormularMedium/formular-medium.002013.woff) format("woff")}@font-face{font-family:Formular;font-style:normal;font-weight:700;src:local("Formular Bold"),local("Formular-Bold"),url(https://miro.com/app/static/static/fonts/general/FormularBold/formular-bold.386f0d.woff2) format("woff2"),url(https://miro.com/app/static/static/fonts/general/FormularBold/formular-bold.b56c49.woff) format("woff")}@font-face{font-family:OpenSans;font-style:normal;font-weight:300;src:local("Open Sans Light"),local("OpenSans-Light"),url(https://miro.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-300.691f77.woff2) format("woff2"),url(https://miro.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-300.431475.woff) format("woff")}@font-face{font-family:OpenSans;font-style:normal;font-weight:400;src:local("Open Sans Regular"),local("OpenSans-Regular"),url(https://miro.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-regular.e78dce.woff2) format("woff2"),url(https://miro.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-regular.86f83c.woff) format("woff")}@font-face{font-family:OpenSans;font-style:italic;font-weight:400;src:local("Open Sans Italic"),local("OpenSans-Italic"),url(https://miro.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-italic.d4955e.woff2) format("woff2"),url(https://miro.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-italic.e83241.woff) format("woff")}@font-face{font-family:OpenSans;font-style:normal;font-weight:600;src:local("Open Sans SemiBold"),local("OpenSans-SemiBold"),url(https://miro.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-600.e9681c.woff2) format("woff2"),url(https://miro.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-600.b4f765.woff) format("woff")}@font-face{font-family:OpenSans;font-style:normal;font-weight:700;src:local("Open Sans Bold"),local("OpenSans-Bold"),url(https://miro.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-700.96f383.woff2) format("woff2"),url(https://miro.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-700.dd482b.woff) format("woff")}@font-face{font-family:OpenSans;font-style:italic;font-weight:700;src:local("Open Sans Bold Italic"),local("OpenSans-BoldItalic"),url(https://miro.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-700italic.eab33c.woff2) format("woff2"),url(https://miro.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-700italic.f569a6.woff) format("woff")}@font-face{font-family:OpenSans;font-style:normal;font-weight:800;src:local("Open Sans ExtraBold"),local("OpenSans-ExtraBold"),url(https://miro.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-800.f12f94.woff2) format("woff2"),url(https://miro.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-800.a466ca.woff) format("woff")}body,button,input,select,textarea{color:#050038;font-style:normal;font-variant-caps:normal;font-weight:400;font-stretch:normal;font-size:14px;line-height:normal;font-family:OpenSans,Arial,Helvetica,sans-serif;font-size-adjust:none;-webkit-font-kerning:auto;font-kerning:auto;font-optical-sizing:auto;font-variant-alternates:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-language-override:normal;font-feature-settings:normal;font-variation-settings:normal;margin:0}.clear{clear:both}.sidebar__content{display:flex;flex-grow:1;position:relative;justify-content:flex-end;min-width:0;min-height:0;height:100%}.diceroller{width:340px}.diceroller .diceroller-header{font-family:Formular,sans-serif;font-size:24px;font-weight:500;margin-top:20px;margin-left:24px;position:absolute;height:64px;left:0;right:0;top:0;box-sizing:content-box}.diceroller .diceroller-rolls{box-sizing:border-box;position:absolute;left:0;right:0;top:64px;bottom:64px;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;scrollbar-color:#827f9b transparent;scrollbar-width:thin}.diceroller .diceroller-rolls__border{border-bottom:1px solid #050038;margin:16px auto;opacity:.16;width:292px}.diceroller-roll{padding:0 24px}.diceroller-roll .diceroller-roll__name{display:flex;align-items:center;font-family:Formular,sans-serif;font-size:16px;font-weight:400;float:left;max-width:200px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;margin-right:10px;color:#050038}.diceroller-roll .diceroller-roll__time{display:inline-block;color:#827f9b;float:right;font-size:12px;margin-top:2px}.diceroller-roll .diceroller-roll__formula{word-break:break-word;overflow-wrap:break-word;word-wrap:break-word;padding-left:10px;padding-top:12px;font-size:16px;font-weight:700}.diceroller-roll .diceroller-roll__message{word-break:break-word;overflow-wrap:break-word;word-wrap:break-word;color:rgba(5,0,56,.73);padding-left:10px;padding-top:4px}.diceroller-roll .diceroller-roll__value{text-align:right;padding-right:10px;padding-top:4px;font-size:20px;font-weight:700}.diceroller .diceroller-bottom{padding:8px;box-sizing:border-box;position:absolute;height:64px;bottom:0;left:0;right:0}.diceroller .diceroller-bottom .diceroller-bottom__container{width:100%;overflow-y:auto;overflow-x:hidden}.diceroller .diceroller-bottom .diceroller-bottom__formula{border-radius:4px;border:1px solid #c3c2cf;padding:0 10px;outline:none;overflow-y:auto;min-height:48px;height:48px!important;width:100%}.input-error{position:relative;-webkit-animation:shake .1s linear;animation:shake .1s linear;-webkit-animation-iteration-count:3;animation-iteration-count:3}@-webkit-keyframes shake{0%{left:-5px;color:red}to{right:-5px;color:red}}@keyframes shake{0%{left:-5px;color:red}to{right:-5px;color:red}}
+/* Miro Web Plugin */
+
+/* Miro Formular fonts */
+@font-face {
+  font-family: 'Formular';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Formular Light'), local('Formular-Light'), url(https://mirostatic.com/app/static/static/fonts/general/FormularLight/formular-light.66c7da.woff2) format('woff2'),  url(https://mirostatic.com/app/static/static/fonts/general/FormularLight/formular-light.96fc69.woff) format('woff');
+}
+@font-face {
+  font-family: 'Formular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Formular Regular'), local('Formular-Regular'), url(https://mirostatic.com/app/static/static/fonts/general/FormularRegular/formular-regular.4b9930.woff2) format('woff2'),  url(https://mirostatic.com/app/static/static/fonts/general/FormularRegular/formular-regular.5de463.woff) format('woff');
+}
+@font-face {
+  font-family: 'Formular';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Formular Medium'), local('Formular-Medium'), url(https://mirostatic.com/app/static/static/fonts/general/FormularMedium/formular-medium.51c999.woff2) format('woff2'),  url(https://mirostatic.com/app/static/static/fonts/general/FormularMedium/formular-medium.002013.woff) format('woff');
+}
+@font-face {
+  font-family: 'Formular';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Formular Bold'), local('Formular-Bold'), url(https://mirostatic.com/app/static/static/fonts/general/FormularBold/formular-bold.386f0d.woff2) format('woff2'),  url(https://mirostatic.com/app/static/static/fonts/general/FormularBold/formular-bold.b56c49.woff) format('woff');
+}
+
+/* Miro OpenSans fonts */
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://mirostatic.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-300.691f77.woff2) format('woff2'),  url(https://mirostatic.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-300.431475.woff) format('woff');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://mirostatic.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-regular.e78dce.woff2) format('woff2'),  url(https://mirostatic.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-regular.86f83c.woff) format('woff');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://mirostatic.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-italic.d4955e.woff2) format('woff2'),  url(https://mirostatic.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-italic.e83241.woff) format('woff');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://mirostatic.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-600.e9681c.woff2) format('woff2'),  url(https://mirostatic.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-600.b4f765.woff) format('woff');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://mirostatic.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-700.96f383.woff2) format('woff2'),  url(https://mirostatic.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-700.dd482b.woff) format('woff');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(https://mirostatic.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-700italic.eab33c.woff2) format('woff2'),  url(https://mirostatic.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-700italic.f569a6.woff) format('woff');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://mirostatic.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-800.f12f94.woff2) format('woff2'),  url(https://mirostatic.com/app/static/static/fonts/general/OpenSans/open-sans-v15-latin_cyrillic_latin-ext-800.a466ca.woff) format('woff');
+}
+
+body, button, input, textarea, select {
+  color: #050038;
+  font-style: normal;
+  font-variant-caps: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 14px;
+  line-height: normal;
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-size-adjust: none;
+  -webkit-font-kerning: auto;
+          font-kerning: auto;
+  font-optical-sizing: auto;
+  font-variant-alternates: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-language-override: normal;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  margin: 0px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Collapsible sidebar */
+.sidebar__content {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+  justify-content: flex-end;
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+}
+
+.diceroller {
+  width: 340px;
+}
+
+/* Dice roller header */
+.diceroller .diceroller-header {
+  font-family: Formular, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-left: 24px;
+  position: absolute;
+  height: 64px;
+  left: 0;
+  right: 0;
+  top: 0;
+  box-sizing: content-box;
+}
+
+/* Dice roller rolls container */
+.diceroller .diceroller-rolls {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 64px; /* header is 64px height */
+  bottom: 64px; /* bottom is 64px height */
+
+  /* scrollable */
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  /* Miro scrollbar style */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-color: #827f9b transparent;
+  scrollbar-width: thin;
+}
+
+.diceroller .diceroller-rolls__border {
+  border-bottom: 1px solid #050038;
+  margin: 16px auto;
+  opacity: 0.16;
+  width: 292px;
+}
+
+/* Dice roll result */
+.diceroller-roll {
+  padding: 0 24px;
+}
+
+.diceroller-roll .diceroller-roll__name {
+  display: flex;
+  align-items: center;
+  font-family: Formular, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  float: left;
+  max-width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-right: 10px;
+  color: #050038;
+}
+
+.diceroller-roll .diceroller-roll__time {
+  display: inline-block;
+  color: #827f9b;
+  float: right;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.diceroller-roll .diceroller-roll__formula {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  padding-left: 10px;
+  padding-top: 12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.diceroller-roll .diceroller-roll__message {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  color: #050038bb;
+  padding-left: 10px;
+  padding-top: 4px;
+}
+
+.diceroller-roll .diceroller-roll__value {
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 4px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Dice roller bottom */
+.diceroller .diceroller-bottom {
+  padding: 8px;
+  box-sizing: border-box;
+  position: absolute;
+  height: 64px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.diceroller .diceroller-bottom .diceroller-bottom__container {
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.diceroller .diceroller-bottom .diceroller-bottom__formula {
+  border-radius: 4px;
+  border: 1px solid #c3c2cf;
+  padding: 0px 10px;
+  outline: none;
+  overflow-y: auto;
+  min-height: 48px;
+  height: 48px !important;
+  width: 100%;
+}
+
+/* input error animation */
+.input-error {
+  position: relative;
+  -webkit-animation: shake .1s linear;
+          animation: shake .1s linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+}
+
+@-webkit-keyframes shake {
+  0% { left: -5px; color: red; }
+  100% { right: -5px; color: red; }
+}
+
+@keyframes shake {
+  0% { left: -5px; color: red; }
+  100% { right: -5px; color: red; }
+}
+
