@@ -1,6 +1,6 @@
 // rpg-dice-roller engine
 
-const DiceRoller = require('rpg-dice-roller/lib/umd/bundle').DiceRoller
+const DiceRoller = require('rpg-dice-roller').DiceRoller
 const engines = require('./index')
 const Engine = require('./base-engine')
 
