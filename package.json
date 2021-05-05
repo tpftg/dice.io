@@ -39,7 +39,7 @@
     "rpg-dice-roller": "^4.5.2",
     "rpgdicejs": "^2.0.0-rc.3",
     "serve-static": "^1.14.1",
-    "socket.io": "^3.1.0"
+    "socket.io": "^4.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -52,7 +52,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.4",
     "postcss": "^8.2.4",
     "postcss-loader": "^4.2.0",
-    "socket.io-client": "^3.1.0",
+    "socket.io-client": "^4.0.1",
     "stylelint": "^13.9.0",
     "stylelint-config-recommended": "^3.0.0",
     "terser-webpack-plugin": "^4.2.3",
