@@ -36,7 +36,7 @@
     "cors": "^2.8.5",
     "dice.js": "^0.9.3",
     "express": "^4.17.1",
-    "rpg-dice-roller": "^4.5.2",
+    "rpg-dice-roller": "^5.0.0",
     "rpgdicejs": "^2.0.0-rc.3",
     "serve-static": "^1.14.1",
     "socket.io": "^4.0.1"
