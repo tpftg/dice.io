@@ -1,3 +1,5 @@
+[![MIT license](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 # Dice.io
 
 A simple [Node.js](https://nodejs.org) dice roller server.
@@ -55,3 +57,7 @@ This project mainly uses the following dependencies :
 Dice SVG icon originally made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/).
 
 _"Shake And Roll Dice"_ sound made by __Mike Koenig__ from [sounbible.com](http://soundbible.com/182-Shake-And-Roll-Dice.html). [Creative Commons](https://creativecommons.org/licenses/by/3.0/legalcode).
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE) for more information.

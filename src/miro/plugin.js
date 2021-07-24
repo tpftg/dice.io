@@ -21,22 +21,21 @@ function startApp(nickname, channel) {
 
 miro.onReady(() => {
   // Attempt to get current user name (dice roller nickname)
-  miro.currentUser.getId()
-    .then((id) => {
-      fetch('https://miro.com/api/v1/users/' + id)
-        .then(response => response.json())
-        .then(data => {
-          // Attempt to get team account id (dice roller channel)
-          miro.account.get()
-            .then((account) => {
-              startApp(data.name, 'miro' + account.id)
-            })
-            .catch(e => {
-              console.log('[Dice Roller] Failed to get team account id', e)
-            })
-        })
-        .catch(e => {
-          console.log('[Dice Roller] Failed to get current user nickname', e)
-        })
+  // and team account id (dice roller channel)
+  miro.board.getInfo()
+    .then(data => {
+      // Ensure data exists because it is an undocumented feature and might be updated/removed in the future
+      if (! data.currentUserContext ||
+          ! data.currentUserContext.user ||
+          ! data.currentUserContext.user.name ||
+          ! data.account ||
+          ! data.account.id) {
+        throw new Error('Failed to extract user name or account id from board info')
+      }
+
+      startApp(data.currentUserContext.user.name, 'miro' + data.account.id)
+    })
+    .catch(e => {
+      console.log('[Dice Roller] Failed to get board info', e)
     })
 })
