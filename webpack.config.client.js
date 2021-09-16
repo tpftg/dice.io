@@ -8,9 +8,11 @@ var options = {
   output: {
     path: path.resolve(__dirname, 'public/js'),
     filename: 'diceio.min.js',
-    library: 'DiceIO',
-    libraryExport: 'default',
-    libraryTarget: 'umd',
+    library: {
+      type: 'umd',
+      name: 'DiceIO',
+      export: 'default',
+    },
   },
   module: {
     rules: [

@@ -1,7 +1,7 @@
 // dice.io demo application webpack configuration
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const path = require('path')
 const TerserPlugin = require('terser-webpack-plugin');
 
@@ -10,9 +10,11 @@ var options = {
   output: {
     path: path.resolve(__dirname, 'public/js'),
     filename: 'app.min.js',
-    library: 'DemoApp',
-    libraryExport: 'default',
-    libraryTarget: 'umd',
+    library: {
+      type: 'umd',
+      name: 'DemoApp',
+      export: 'default',
+    },
   },
   module: {
     rules: [
@@ -29,7 +31,12 @@ var options = {
         test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader?url=false',
+          {
+            loader: 'css-loader',
+            options: {
+              url: false,
+            }
+          },
           'postcss-loader',
         ],
       },
@@ -53,7 +60,7 @@ if (process.env.npm_lifecycle_event === 'dist') {
         },
       },
     }),
-    new OptimizeCSSAssetsPlugin({}),
+    new CssMinimizerPlugin(),
   ]
 } else {
   options.optimization.minimize = false

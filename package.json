@@ -31,7 +31,7 @@
     "start": "./bin/index.js"
   },
   "dependencies": {
-    "command-line-args": "^5.1.1",
+    "command-line-args": "^5.2.0",
     "command-line-usage": "^6.1.1",
     "cors": "^2.8.5",
     "dice.js": "^0.9.3",
@@ -39,24 +39,24 @@
     "rpg-dice-roller": "^5.0.0",
     "rpgdicejs": "^2.0.0-rc.3",
     "serve-static": "^1.14.1",
-    "socket.io": "^4.0.1"
+    "socket.io": "^4.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "autoprefixer": "^10.2.3",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "autoprefixer": "^10.3.4",
     "babel-loader": "^8.2.2",
-    "css-loader": "^5.0.1",
-    "eslint": "^7.18.0",
-    "mini-css-extract-plugin": "^1.3.4",
-    "optimize-css-assets-webpack-plugin": "^5.0.4",
-    "postcss": "^8.2.4",
-    "postcss-loader": "^4.2.0",
-    "socket.io-client": "^4.0.1",
-    "stylelint": "^13.9.0",
-    "stylelint-config-recommended": "^3.0.0",
-    "terser-webpack-plugin": "^4.2.3",
-    "webpack": "^4.46",
-    "webpack-cli": "^4.4.0"
+    "css-loader": "^6.2.0",
+    "css-minimizer-webpack-plugin": "^3.0.2",
+    "eslint": "^7.32.0",
+    "mini-css-extract-plugin": "^2.3.0",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^6.1.1",
+    "socket.io-client": "^4.2.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-recommended": "^5.0.0",
+    "terser-webpack-plugin": "^5.2.4",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0"
   }
 }
