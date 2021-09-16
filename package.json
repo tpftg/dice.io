@@ -1,7 +1,7 @@
 {
   "author": "tpftg",
   "name": "dice.io",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A simple dice roller server.",
   "license": "MIT",
   "repository": {
