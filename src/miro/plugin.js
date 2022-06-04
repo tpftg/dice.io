@@ -19,23 +19,30 @@ function startApp(nickname, channel) {
   let app = new MiroPluginApp(diceRoller) // eslint-disable-line no-unused-vars
 }
 
-miro.onReady(() => {
-  // Attempt to get current user name (dice roller nickname)
-  // and team account id (dice roller channel)
-  miro.board.getInfo()
-    .then(data => {
-      // Ensure data exists because it is an undocumented feature and might be updated/removed in the future
-      if (! data.currentUserContext ||
-          ! data.currentUserContext.user ||
-          ! data.currentUserContext.user.name ||
-          ! data.account ||
-          ! data.account.id) {
-        throw new Error('Failed to extract user name or account id from board info')
-      }
+function sanitize(str) {
+  return str.toLowerCase().replace(/[^a-z0-9]/gi, '')
+}
 
-      startApp(data.currentUserContext.user.name, 'miro' + data.account.id)
-    })
-    .catch(e => {
-      console.log('[Dice Roller] Failed to get board info', e)
-    })
-})
+async function init() {
+  // Attempt to get current user id (dice roller nickname)
+  const userInfo = await miro.board.getUserInfo().catch((e) => {
+    console.log('[Dice Roller] Failed to get user info', e)
+  })
+
+  // Attempt to get board id (dice roller channel)
+  const boardInfo = await miro.board.getInfo().catch((e) => {
+    console.log('[Dice Roller] Failed to get board info', e)
+  })
+
+  // Ensure user id and board id are available
+  if (! userInfo.id || ! boardInfo.id) {
+    throw new Error('[Dice Roller] failed to get required info')
+  }
+
+  // Start the app
+  const nickname = 'user_' + sanitize(userInfo.id)
+  const channel = 'miro' + sanitize(boardInfo.id)
+  startApp(nickname, channel)
+}
+
+init()
