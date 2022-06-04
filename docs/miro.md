@@ -16,36 +16,44 @@ To get started you need to :
 
 Note : you can skip this step if already have __Dev Team__.
 
-Just follow [instructions here](https://developers.miro.com/docs/getting-started#section-step-1-get-developer-team). _(click on the __"Get Dev Team"__ button)_
+Just follow [instructions here](https://developers.miro.com/docs/rest-api-build-your-first-hello-world-app#step-1-create-a-developer-team-in-miro). _(click on the __"Create a Developer team in Miro"__ link)_
 
 ### Create application
 
-In Miro account __profile settings__, click on __"API, SDK & Embed"__ tab and click on __"Create a new app"__ button.
+In Miro account __profile settings__, click on __"Your apps"__ tab and click on __"Create a new app"__ button (after checking box).
 
 ![profile settings](miro-profile.png)
 
-In __Web-plugin__ section enter the dice.io server web plugin url : it is server root url __with `/miro/` path__, and click on __"save"__ button.
+In __"Create new app"__ modal, enter App Name then click on __"Create app"__ button.
+
+![profile settings](miro-create-app.png)
+
+In __App URL__ section enter the dice.io server web plugin url : it is server root url __with `/miro/` path__, and click on __"save"__ button.
 
 _(for example `https://example.com/miro/`)_
 
-In __OAuth scopes__ section select `boards:read` scope.
+In __Permissions__ section select `boards:read` and `identity:read` scopes.
 
-Finally, click on __"Install app and get OAuth Token"__ button and choose the team where to install the plugin.
+Finally, click on __"Install app and get OAuth Token"__ button and choose the team where to install the app.
 
-![app settings](miro-app.png)
+![app settings](miro-app-url.png)
+
+![app settings](miro-app-permissions.png)
 
 Note: this web plugin does not access to boards, it only get :
 
-* the name of current logged in user to setup the dice roller nickname
-* the team account id to setup the dice roller channel name _(shared by all users connected to the board)_
+* the id of current logged in user to setup the dice roller nickname
+* the board id to setup the dice roller channel name _(shared by all users connected to the board)_
 
 ## Usage
 
-When installed, the web plugin add a dice icon on the bottom bar.
+When installed, the app is available by clicking the "more tools" button on the left side bar.
 
-Just click on dice button to open sidebar and type a dice formula.
+Just click on app button to open sidebar and type a dice formula.
 
-![profile settings](miro-plugin.png)
+![profile settings](miro-left-bar.png)
+
+![profile settings](miro-app.png)
 
 ## Credits
 
