@@ -12,3 +12,4 @@ src/miro
 tests
 webpack.config.*.js
 yarn.lock
+yarn-error.log
