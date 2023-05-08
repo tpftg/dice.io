@@ -1,6 +1,6 @@
 // rpg-dice-roller engine
 
-const DiceRoller = require('rpg-dice-roller').DiceRoller
+const { DiceRoller } = require('@dice-roller/rpg-dice-roller');
 const engines = require('./index')
 const Engine = require('./base-engine')
 
