@@ -42,7 +42,7 @@ Finally, click on __"Install app and get OAuth Token"__ button and choose the te
 
 Note: this web plugin does not access to boards, it only get :
 
-* the id of current logged in user to setup the dice roller nickname
+* the id of current logged in user and the list of online users to setup the dice roller nickname
 * the board id to setup the dice roller channel name _(shared by all users connected to the board)_
 
 ## Usage
