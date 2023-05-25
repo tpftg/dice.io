@@ -34,13 +34,21 @@ async function init() {
     console.log('[Dice Roller] Failed to get board info', e)
   })
 
+  // Attempt to get online users (dice roller nickname)
+  const users = await miro.board.getOnlineUsers().catch((e) => {
+    console.log('[Dice Roller] Failed to get online users', e)
+  })
+
   // Ensure user id and board id are available
   if (! userInfo.id || ! boardInfo.id) {
     throw new Error('[Dice Roller] failed to get required info')
   }
 
+  // Attempt to find username
+  const user = Array.isArray(users) ? users.find(u => u.id && u.id === userInfo.id) : null
+
   // Start the app
-  const nickname = 'user_' + sanitize(userInfo.id)
+  const nickname = user && user.name ? user.name : 'user_' + sanitize(userInfo.id)
   const channel = 'miro' + sanitize(boardInfo.id)
   startApp(nickname, channel)
 }
